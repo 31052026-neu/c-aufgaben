@@ -12,7 +12,7 @@ int main()
     scanf("%d", &eingabe2);
 
     scanf("%d", &eingabe3);
-    if (eingabe1 == eingabe2 && eingabe1 == eingabe3) {
+    if (eingabe1 == eingabe2 && eingabe1 == eingabe3) {         //
         printf("Alle Zahlen sind gleich\n");
     }
     else if (eingabe1 >= eingabe2 && eingabe1 >= eingabe3) {
