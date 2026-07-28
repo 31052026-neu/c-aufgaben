@@ -4,7 +4,6 @@ int main() {
 
     int geheime_zahl = 23;
     int eingabe;
-
     printf("Gib eine Zahl ein, von der du denkst sie wäre die Geheime Zahl: ");
     scanf("%d", &eingabe );
 
@@ -18,6 +17,8 @@ int main() {
         printf("die Zahl ist größer als die geheime Zahl\n");
 
     }
+
+    
 
     return 0;
 }
