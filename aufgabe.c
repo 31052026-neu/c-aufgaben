@@ -69,12 +69,24 @@ int main()
     printf("%d | %d | %d\n", A, B, (A && !B) || (!A && B));
 
     printf("\nNOT\n");
-    printf("A | B | A NOT B");
+    printf("A | B | A NOT B\n");
     printf("----------------\n");
 
     A = 0;
     B = 0;
-    printf("%d | %d | %d %d\n", A, B, !A,  !B);
+    printf("%d | %d | %d\n", A, B, !A );
+    
+    A = 0;
+    B = 1;
+    printf("%d | %d | %d\n", A, B ,!A);
+
+    A = 1;
+    B = 0;
+    printf("%d | %d | %d\n", A, B ,!A);
+
+    A = 1;
+    B = 1;
+    printf("%d | %d | %d\n", A, B ,!A);
 
      return 0;
 
