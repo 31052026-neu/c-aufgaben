@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 int main () {
@@ -10,18 +11,27 @@ int main () {
     };
     for ( int i = 0; i < 4; i++) {
         int summe = 0;
-
         for (int j = 0; j < 4; j++) {
             summe += matrix [i][j];
       }
-      printf ("die Spalte %d hat die Summe %d\n",i ,summe);
+      printf ("Die Zeile %d hat die Summe %d\n",i ,summe);
     }
-
     for ( int i = 0; i < 4; i++) {
         int summe = 0;
-        for (int j = 0; j < 4; i++) {
-            summe += matrix [i][j];
+        for (int j = 0; j < 4; j++) {
+            summe += matrix [j][i];
         }
-        printf (" Die Reihe %d hat die Summe %d\n", i, summe);
+        printf ("Die Spalte %d hat die Summe %d\n", i, summe);
     }
-}
+    int summe = 0;
+    for (int i = 0; i <4; i++) {
+        summe += matrix [i][i];
+    }
+    printf ("Die Diagonale von oben links hat die Summe %d\n", summe);
+    
+        summe = 0;
+    for (int i = 0; i < 4; i++) {
+        summe +=matrix [i][3 - i];
+    }
+    printf("Die Diagonale von oben rechts hat die Summe %d\n", summe);
+    return 0;
