@@ -45,6 +45,7 @@ int main(int argc, char *argv[]) {
     }
     letztesZeichen = zeichen;
   }
+
   /* wenn anzahlZeichen größer als 0 ist und letztesZeichen nicht newline, dann
    * zähle zeilen um eins hoch */
   if (anzahlZeichen > 0 && letztesZeichen != '\n') {
